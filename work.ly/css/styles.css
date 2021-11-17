@@ -1,0 +1,429 @@
+/**************************/
+/*     General Styles     */
+/**************************/
+body {
+  background-color: #000909;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h5 {
+  color: #eee;
+  font-weight: 600;
+}
+
+/**********************/
+/*     Background     */
+/**********************/
+.bg-header img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.right-circle img,
+.left-circle img {
+  width: 200px;
+  position: absolute;
+  top: -150px;
+  right: 0;
+  z-index: -1;
+}
+
+.left-circle img {
+  transform: rotate(-180deg);
+  left: 0;
+}
+
+.bg-footer img {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+/**********************/
+/*     Navigation     */
+/**********************/
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-weight: 300;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #90bcb7;
+}
+
+.navbar .navbar-toggler i.bi-list {
+  font-size: 1.875rem;
+  color: #fff;
+}
+
+/******************/
+/*     Header     */
+/******************/
+.header {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.header p {
+  color: #90bcb7;
+}
+
+.header .btn-solid {
+  display: inline-block;
+  padding: 0.875rem 2.375rem 0.875rem 2.375rem;
+  border-radius: 8px;
+  background-color: #eee;
+  color: #082d28;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.header .btn-solid:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  background-color: transparent;
+}
+
+.right-col {
+  height: 100vh;
+  background-image: url(../img/Image.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/********************/
+/*     Services     */
+/********************/
+.services {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.services .card {
+  background-color: #0a0f16;
+  margin-bottom: 3rem;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+}
+
+.services .card p {
+  font-weight: 400;
+  color: #888;
+}
+
+/*********************/
+/*     Portfolio     */
+/*********************/
+.portfolio {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.portfolio p {
+  color: #888;
+}
+
+.portfolio .portfolio-detail {
+  display: block;
+  color: #eee;
+  text-align: center;
+}
+
+.portfolio .portfolio-detail a {
+  color: #eee;
+  transition: 0.5s;
+}
+
+.portfolio .portfolio-detail a:hover {
+  color: #90bcb7;
+}
+
+.portfolio .photo-container {
+  display: grid;
+  row-gap: 1.25rem;
+  margin-bottom: 2.75rem;
+}
+
+.photo-item {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 12px;
+}
+
+.photo1 {
+  background-image: url(../img/port-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.photo2 {
+  background-image: url(../img/port-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.photo3 {
+  background-image: url(../img/port-3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.photo4 {
+  background-image: url(../img/port-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/**********************/
+/*    Testimonial     */
+/**********************/
+.testimonial {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.testimonial .testimonial-companies img {
+  margin: 0.75rem;
+}
+
+.testimonial .testimonial-review img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.testimonial .reviewer-quote p,
+.testimonial .reviewer-quote span {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #eee;
+  margin-bottom: 2rem;
+}
+
+.testimonial .reviewer-quote span {
+  color: #666;
+}
+
+.testimonial .reviewer-quote h6 {
+  color: #eee;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+.testimonial .reviewer-quote .quote-icon {
+  position: absolute;
+  top: -35px;
+  right: 25px;
+  z-index: -1;
+}
+
+/********************/
+/*    Subscribe     */
+/********************/
+.subscribe {
+  background-image: url(../img/Background-linear.png);
+  background-size: cover;
+  text-align: center;
+}
+
+.subscribe h2,
+.subscribe p {
+  color: #000909;
+}
+
+.subscribe p,
+.subscribe .subscribe-email ::placeholder,
+.subscribe .subscribe-email .btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.subscribe .subscribe-email {
+  max-width: 459px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.subscribe .subscribe-email span {
+  background-color: transparent;
+}
+
+.subscribe .subscribe-email ::placeholder {
+  color: #569b9b;
+}
+
+.subscribe .subscribe-email button {
+  color: #eee;
+  border-radius: 8px;
+  background-image: linear-gradient(45deg, #02a6a6, #016a6a);
+}
+
+.subscribe .subscribe-email button:hover {
+  background-image: linear-gradient(45deg, #016a6a, #016a6a);
+}
+
+/****************************/
+/*    Footer & Copyright    */
+/****************************/
+.footer,
+.copyright p {
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: #ecf1f4;
+}
+
+.footer .name-company,
+.footer h5 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.footer .nav-item a {
+  color: #ecf1f4;
+}
+
+.footer .nav-item a:hover {
+  color: #90bcb7;
+}
+
+.copyright p {
+  font-weight: 400;
+}
+
+/****************************/
+/*    Back to Top Button    */
+/****************************/
+.backtotop {
+  display: none;
+  position: relative;
+}
+
+.backtotop a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #000909;
+  background-color: #eee;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/
+@media (min-width: 768px) {
+  /* Header */
+  .header {
+    padding-top: 9rem;
+  }
+
+  /* Portfolio */
+  .photo-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  /* Testimonial */
+  .testimonial .testimonial-review {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonial .testimonial-review img {
+    max-width: 250px;
+  }
+
+  .testimonial .reviewer-quote {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Navbar */
+  .offcanvas-collapse {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    visibility: visible;
+  }
+
+  .offcanvas-collapse.open {
+    transform: none;
+  }
+
+  /* Services */
+  .services .card:nth-of-type(3n + 2) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  /* Portfolio */
+  .portfolio p {
+    width: 46rem;
+  }
+
+  .photo-container {
+    width: 100%;
+    grid-template-columns: none;
+    grid-template-areas:
+      "item1 item2 item4"
+      "item1 item3 item4";
+    gap: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .photo1 {
+    grid-area: item1;
+  }
+
+  .photo2 {
+    grid-area: item2;
+  }
+
+  .photo3 {
+    grid-area: item3;
+  }
+
+  .photo4 {
+    grid-area: item4;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Header */
+  .header p {
+    width: 35rem;
+  }
+
+  /* Services */
+  .services .container {
+    max-width: 1140px;
+  }
+
+  .services .card:nth-of-type(3n + 2) {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+}
