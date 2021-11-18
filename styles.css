@@ -6,10 +6,28 @@ body h1 {
   font-family: "Playfair Display", serif;
 }
 
-.project-container img {
-  width: 20rem;
+body a {
+  text-decoration: none;
+}
+
+.heroes {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.project-container {
+  padding-top: 5rem;
+}
+
+.project-container .project-img {
+  width: 100%;
+  height: 15rem;
   border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-image: url(work.ly/img/Work.ly.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
 }
 
 .project-container h5 {
@@ -17,15 +35,52 @@ body h1 {
 }
 
 .project-container .row {
-  width: 60rem;
-}
-
-.project-container .col {
-  border-radius: 8px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 
-.project-container .col:hover {
+.project-container .project {
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.project-container .row:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+}
+
+.footer {
+  padding-top: 8rem;
+}
+
+@media (min-width: 768px) {
+  .project-container .row {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .project-container .project-img {
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+  }
+
+  .project-container .project::before {
+    content: "";
+    width: 1rem;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+
+  .project-container .row:hover .project-img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .project-container .row:hover .project::before {
+    background-color: #dc3545;
+  }
 }
