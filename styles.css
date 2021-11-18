@@ -5,3 +5,27 @@ body {
 body h1 {
   font-family: "Playfair Display", serif;
 }
+
+.project-container img {
+  width: 20rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.project-container h5 {
+  font-weight: 600;
+}
+
+.project-container .row {
+  width: 60rem;
+}
+
+.project-container .col {
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.project-container .col:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+}
