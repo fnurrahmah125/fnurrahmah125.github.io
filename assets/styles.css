@@ -17,6 +17,7 @@ body a {
 
 .project-container {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .project-container .project-img {
@@ -52,35 +53,28 @@ body a {
 }
 
 @media (min-width: 768px) {
-  .project-container .row {
-    width: 100%;
-    transition: 0.5s;
+  .project-container {
+    max-width: 960px;
+  }
+
+  .project-container .project {
+    display: flex;
   }
 
   .project-container .project-img {
-    height: 100%;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    width: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     transition: 0.5s;
   }
 
   .project-container .project::before {
     content: "";
-    width: 1rem;
+    width: 0.5rem;
     height: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    background-color: transparent;
-    transition: 0.5s;
-  }
-
-  .project-container .row:hover .project-img {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .project-container .row:hover .project::before {
     background-color: #dc3545;
   }
 }
