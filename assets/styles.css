@@ -12,69 +12,31 @@ body a {
 
 .heroes {
   padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
-.project-container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 8rem;
 }
 
-.project-container .project-img {
-  width: 100%;
-  height: 15rem;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background-image: url(Work.ly.png);
-  background-size: cover;
-  background-position: center;
+.cards .card {
   transition: 0.5s;
 }
 
-.project-container h5 {
-  font-weight: 600;
-}
-
-.project-container .row {
-  transition: 0.5s;
-}
-
-.project-container .project {
-  border-radius: 8px;
+.cards .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.project-container .row:hover {
+.cards .card:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
 }
 
-.footer {
-  padding-top: 8rem;
-}
-
-@media (min-width: 768px) {
-  .project-container {
-    max-width: 960px;
-  }
-
-  .project-container .project {
-    display: flex;
-  }
-
-  .project-container .project-img {
-    width: 50%;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 0;
-    transition: 0.5s;
-  }
-
-  .project-container .project::before {
-    content: "";
-    width: 0.5rem;
-    height: 100%;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: #dc3545;
+@media (min-width: 576px) {
+  .cards {
+    justify-content: flex-start;
   }
 }
