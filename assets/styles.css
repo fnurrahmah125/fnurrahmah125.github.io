@@ -35,8 +35,13 @@ body a {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
 }
 
+.cards .card .card-img-top {
+  height: 235px;
+  object-fit: cover;
+}
+
 @media (min-width: 576px) {
   .cards {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
