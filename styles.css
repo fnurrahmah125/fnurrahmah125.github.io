@@ -1,5 +1,6 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
+  background-image: url(assets/dot-grid.png);
 }
 
 body h1 {
