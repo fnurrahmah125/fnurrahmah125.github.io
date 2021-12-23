@@ -40,9 +40,3 @@ body a {
   height: 235px;
   object-fit: cover;
 }
-
-@media (min-width: 576px) {
-  .cards {
-    justify-content: space-around;
-  }
-}
