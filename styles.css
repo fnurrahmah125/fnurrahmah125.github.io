@@ -13,7 +13,23 @@ body a {
 
 .heroes {
   padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #212529;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav .active a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
 }
 
 .cards {
@@ -39,4 +55,9 @@ body a {
 .cards .card .card-img-top {
   height: 235px;
   object-fit: cover;
+}
+
+.frontEnd,
+.python {
+  display: block;
 }
